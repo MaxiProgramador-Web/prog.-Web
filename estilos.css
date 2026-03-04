@@ -42,4 +42,17 @@ body {
     .vamos h2 {
         color: gray;
     }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .btn-instagram {
+        order: 2;
+        margin-top: 15px;
+    }
+    .logo {
+        order: 1;
+    }
 }
