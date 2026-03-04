@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* BOTÓN INSTAGRAM */
+.btn-instagram {
+    background-color: #E1306C; /* color Instagram */
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 18px; /* tamaño del texto */
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-instagram:hover {
+    background-color: #C13584;
+}
+
+/* LOGO */
+.logo-web {
+    width: 250px; /* achica o agranda acá */
+    height: auto;
+}
