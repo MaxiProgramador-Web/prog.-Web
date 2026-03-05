@@ -62,7 +62,7 @@ body {
     }
 
     img {
-        max-width: 90%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -110,6 +110,69 @@ body {
     .centrado, .derecha{
         margin-left: 0;
         margin-right: 0;
+    }
+        .planes {
+        display: flex;
+        justify-content: space-between; /* izquierda, centro, derecha */
+        flex-wrap: nowrap;              /* no rompen fila */
+        gap: 10px;
+        padding: 0 10px;                /* espacio a los lados */
+    }
+
+    .card-plan {
+        width: 130px;                    /* un poquito más grande */
+        height: auto;
+        padding: 20px;
+        font-size: 13px;
+        
+    }
+
+    /* Clases especiales para centrar y mover las tarjetas */
+    .card-plan.centrado {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-plan.derecha {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .card-plan{
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    /* Botón en móvil */
+    .boton-consulta {
+        font-size: 14px;
+        padding: 10px 20px;
+    } 
+    body.index{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+@media (min-width: 769px) {
+    body.index {
+        font-size: 16px; /* texto un poco más grande en PC */
+    }
+
+    h1 {
+        font-size: 45px; /* título principal más grande en PC */
+    }
+
+    h2 {
+        font-size: 35px; /* subtítulos más grandes */
+    }
+
+    p {
+        font-size: 25px; /* texto normal más grande */
+    }
+
+    .boton-consulta {
+        font-size: 18px; /* botón más visible */
+        padding: 12px 25px;
     }
 }
 .whatsapp-float{
@@ -235,41 +298,17 @@ body {
     margin: 0;
     padding: 40px 80px;
 }
-@media (max-width: 768px) {
-    .planes {
-        display: flex;
-        justify-content: space-between; /* izquierda, centro, derecha */
-        flex-wrap: nowrap;              /* no rompen fila */
-        gap: 10px;
-        padding: 0 10px;                /* espacio a los lados */
-    }
+.logo-cuadro {
+    display: none;
+}
 
-    .card-plan {
-        width: 130px;                    /* un poquito más grande */
+/* Solo en PC se muestra */
+@media (min-width: 769px) {
+    .logo-cuadro {
+        display: inline-block;   /* o block según cómo quieras que se vea */
+        width: 40px;             /* tamaño del logo en PC */
         height: auto;
-        padding: 20px;
-        font-size: 13px;
-    }
-
-    /* Clases especiales para centrar y mover las tarjetas */
-    .card-plan.centrado {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .card-plan.derecha {
-        margin-left: auto;
-        margin-right: 0;
-    }
-
-    .card-plan.izquierda {
-        margin-left: 0;
-        margin-right: auto;
-    }
-
-    /* Botón en móvil */
-    .boton-consulta {
-        font-size: 14px;
-        padding: 10px 20px;
+        margin-left: 10px;        /* espacio entre texto y logo */
+        vertical-align: middle;   /* para que quede alineado con el texto */
     }
 }
