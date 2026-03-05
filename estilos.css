@@ -7,7 +7,6 @@
 
 /* BOTÓN INSTAGRAM */
 .btn-instagram {
-    background-color: #E1306C; /* color Instagram */
     color: white;
     text-decoration: none;
     padding: 12px 25px;
@@ -16,9 +15,8 @@
     border-radius: 8px;
     transition: 0.3s;
 }
-
-.btn-instagram:hover {
-    background-color: #C13584;
+.titulo-principal img{
+    width: 100px;
 }
 
 /* LOGO */
@@ -31,7 +29,11 @@ font-style: italic;
 font-size: 20px;
 }
 body {
-    background-color: #fdf6ed;
+    background-color: #0f0f14;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 40px 80px;
 }
 @media (max-width: 768px) {
 
@@ -107,6 +109,10 @@ body {
         font-size: 18px;
         padding: 15px;
     }
+    .centrado, .derecha{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 .whatsapp-float{
     position: fixed;
@@ -126,7 +132,7 @@ body {
 }
 .boton-planes{
     display: inline-block;
-    background: #25D366;
+    background: #4d4e4d;
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
@@ -135,7 +141,7 @@ body {
     transition: 0.3s;
 }
 .boton-planes:hover{
-    background: #1ebe5d;
+    background: #057b99;
     transform: scale(1.05);
 }
 .boton-wsp {
@@ -173,4 +179,49 @@ body {
 .boton-volver:hover {
     background-color: #555;
     transform: scale(1.05);
+}
+.plan{
+    color: aqua;
+}
+.card-plan {
+    background: linear-gradient(145deg, #0a1f44, #123c7a);
+    padding: 30px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    color: white;
+}
+.planes{
+    display: flex;
+}
+.centrado{
+    margin-left: auto;
+    margin-right: auto;
+}
+.derecha{
+    margin-left: auto;
+}
+.contenedor-boton {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.boton-consulta {
+    display: inline-block;
+    padding: 18px 45px;
+    background: linear-gradient(90deg, #00bfff, #0077ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0, 150, 255, 0.5);
+}
+
+.boton-consulta:hover {
+    transform: scale(1.07);
+    box-shadow: 0 15px 40px rgba(0, 150, 255, 0.7);
 }
