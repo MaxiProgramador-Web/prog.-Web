@@ -76,6 +76,37 @@ body {
         width: 80%;
         margin: 15px auto;
     }
+        body {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p, li {
+        font-size: 18px;
+    }
+
+    .boton-wsp,
+    .boton-planes {
+        font-size: 18px;
+        padding: 15px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .boton-volver {
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+    }
 }
 .whatsapp-float{
     position: fixed;
