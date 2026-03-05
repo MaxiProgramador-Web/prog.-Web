@@ -57,6 +57,25 @@ body {
     .btn-instagram {
         order: 2;
    }
+   body {
+        text-align: center;
+    }
+
+    img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .logo-wsp {
+        width: 80px;
+    }
+
+    .boton-planes,
+    .boton-wsp {
+        display: block;
+        width: 80%;
+        margin: 15px auto;
+    }
 }
 .whatsapp-float{
     position: fixed;
