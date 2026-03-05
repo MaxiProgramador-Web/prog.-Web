@@ -256,13 +256,6 @@ body {
 .planes{
     display: flex;
 }
-.centrado{
-    margin-left: auto;
-    margin-right: auto;
-}
-.derecha{
-    margin-left: auto;
-}
 .contenedor-boton {
     text-align: center;
     margin-top: 60px;
@@ -290,7 +283,7 @@ body {
     margin: 0;
     padding: 0;
 }
-.wavw img{
+.wave img{
     width: 100%;
     display: block;
 }
@@ -312,3 +305,41 @@ body {
         vertical-align: middle;   /* para que quede alineado con el texto */
     }
 }
+@media (min-width: 769px) {
+    .planes {
+        display: flex;
+        justify-content: center;  /* centra todas las tarjetas */
+        flex-wrap: nowrap;        /* que no se rompan en varias filas */
+        gap: 20px;                /* separacion entre tarjetas, ajustalo si querés más juntas */
+        margin-top: 40px;
+    }
+
+    .card-plan {
+        width: 200px;             /* tamaño de cada tarjeta en PC */
+        padding: 20px;
+        text-align: center;       /* centra el texto dentro de la tarjeta */
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+
+    /* Contenedor general de planes centrado y sin margen */
+    body.planes-page .planes {
+        display: flex;
+        flex-direction: column;    /* una tarjeta debajo de otra */
+        align-items: center;       /* centra las tarjetas horizontalmente */
+        justify-content: center;   /* opcional, centra verticalmente si hay espacio */
+        gap: 15px;                 /* separación entre tarjetas */
+        margin: 0;                 /* quita margen que cause desplazamiento */
+        padding: 0 10px;           /* un poco de padding para que no toque los bordes */
+        overflow-x: hidden;        /* previene scroll horizontal */
+    }
+
+    /* Ajuste de cada tarjeta */
+    body.planes-page .card-plan {
+        width: 90%;                /* ocupa casi todo el ancho del celular */
+        max-width: 350px;          /* no se haga gigante en móviles grandes */
+        padding: 15px;
+        text-align: center;        /* centra contenido dentro de cada tarjeta */
+        font-size: 14px;           /* tamaño cómodo para celular */
+    }
