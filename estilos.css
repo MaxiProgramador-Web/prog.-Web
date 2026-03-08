@@ -5,12 +5,12 @@
     padding: 20px;
 }
 
-/* BOTÓN INSTAGRAM */
+
 .btn-instagram {
     color: white;
     text-decoration: none;
     padding: 12px 25px;
-    font-size: 18px; /* tamaño del texto */
+    font-size: 18px;
     font-weight: bold;
     border-radius: 8px;
     transition: 0.3s;
@@ -19,9 +19,9 @@
     width: 100px;
 }
 
-/* LOGO */
+
 .logo-web {
-    width: 250px; /* achica o agranda acá */
+    width: 250px; 
     height: auto;
 }
 .soluciones p{
@@ -113,21 +113,21 @@ body {
     }
         .planes {
         display: flex;
-        justify-content: space-between; /* izquierda, centro, derecha */
-        flex-wrap: nowrap;              /* no rompen fila */
+        justify-content: space-between; 
+        flex-wrap: nowrap;              
         gap: 10px;
-        padding: 0 10px;                /* espacio a los lados */
+        padding: 0 10px;                
     }
 
     .card-plan {
-        width: 130px;                    /* un poquito más grande */
+        width: 130px;                    
         height: auto;
         padding: 20px;
         font-size: 13px;
         
     }
 
-    /* Clases especiales para centrar y mover las tarjetas */
+   
     .card-plan.centrado {
         margin-left: auto;
         margin-right: auto;
@@ -155,23 +155,23 @@ body {
 }
 @media (min-width: 769px) {
     body.index {
-        font-size: 16px; /* texto un poco más grande en PC */
+        font-size: 16px;
     }
 
     h1 {
-        font-size: 45px; /* título principal más grande en PC */
+        font-size: 45px; 
     }
 
     h2 {
-        font-size: 35px; /* subtítulos más grandes */
+        font-size: 35px; 
     }
 
     p {
-        font-size: 25px; /* texto normal más grande */
+        font-size: 25px; 
     }
 
     .boton-consulta {
-        font-size: 18px; /* botón más visible */
+        font-size: 18px; 
         padding: 12px 25px;
     }
 }
@@ -214,7 +214,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     margin-top: 15px;
-    border: 2px solid #128C7E; /* RECUADRO */
+    border: 2px solid #128C7E; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
@@ -295,51 +295,50 @@ body {
     display: none;
 }
 
-/* Solo en PC se muestra */
+
 @media (min-width: 769px) {
     .logo-cuadro {
-        display: inline-block;   /* o block según cómo quieras que se vea */
-        width: 40px;             /* tamaño del logo en PC */
-        height: auto;
-        margin-left: 10px;        /* espacio entre texto y logo */
-        vertical-align: middle;   /* para que quede alineado con el texto */
+        display: inline-block;   
+        width: 40px;             
+        margin-left: 10px;        
+        vertical-align: middle;   
     }
 }
 @media (min-width: 769px) {
     .planes {
         display: flex;
-        justify-content: center;  /* centra todas las tarjetas */
-        flex-wrap: nowrap;        /* que no se rompan en varias filas */
-        gap: 20px;                /* separacion entre tarjetas, ajustalo si querés más juntas */
+        justify-content: center;  
+        flex-wrap: nowrap;        
+        gap: 20px;                
         margin-top: 40px;
     }
 
     .card-plan {
-        width: 200px;             /* tamaño de cada tarjeta en PC */
+        width: 200px;             
         padding: 20px;
-        text-align: center;       /* centra el texto dentro de la tarjeta */
+        text-align: center;       
         font-size: 16px;
     }
 }
 @media (max-width: 768px) {
 
-    /* Contenedor general de planes centrado y sin margen */
+    
     body.planes-page .planes {
         display: flex;
-        flex-direction: column;    /* una tarjeta debajo de otra */
-        align-items: center;       /* centra las tarjetas horizontalmente */
-        justify-content: center;   /* opcional, centra verticalmente si hay espacio */
-        gap: 15px;                 /* separación entre tarjetas */
-        margin: 0;                 /* quita margen que cause desplazamiento */
-        padding: 0 10px;           /* un poco de padding para que no toque los bordes */
-        overflow-x: hidden;        /* previene scroll horizontal */
+        flex-direction: column;    
+        align-items: center;       
+        justify-content: center;   
+        gap: 15px;                 
+        margin: 0;                 
+        padding: 0 10px;           
+        overflow-x: hidden;        
     }
-
-    /* Ajuste de cada tarjeta */
+}
+    
     body.planes-page .card-plan {
-        width: 90%;                /* ocupa casi todo el ancho del celular */
-        max-width: 350px;          /* no se haga gigante en móviles grandes */
+        width: 90%;                
+        max-width: 350px;          
         padding: 15px;
-        text-align: center;        /* centra contenido dentro de cada tarjeta */
-        font-size: 14px;           /* tamaño cómodo para celular */
+        text-align: center;        
+        font-size: 14px;          
     }
