@@ -13,12 +13,16 @@
     font-size: 18px;
     font-weight: bold;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: transform 0.3s;
+    display: block;
 }
 .titulo-principal img{
-    width: 100px;
+    width: 70px;
+    transform: scale(1.2);
 }
-
+.btn-instagram:hover{
+    transform: scale(1.2);
+}
 
 .logo-web {
     width: 250px; 
